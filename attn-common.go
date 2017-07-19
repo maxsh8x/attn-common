@@ -5,9 +5,9 @@ import "time"
 type (
 	// EventData is incoming data from site visitor
 	EventData struct {
-		OfferID     string  `json:"OfferId"`
-		PlacementID string  `json:"PlacementId"`
-		WidgetID    string  `json:"WidgetId"`
+		OfferID     int32   `json:"OfferId,string"`
+		PlacementID int32   `json:"PlacementId,string"`
+		WidgetID    int32   `json:"WidgetId,string"`
 		TimeSpent   float32 `json:"timeSpent,omitempty"`
 		Scrolled    *bool   `json:"scrolled,omitempty"`
 		Latitude    float32 `json:"latitude,omitempty"`
