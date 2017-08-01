@@ -25,8 +25,8 @@ type (
 		IP       string    `json:"ip"`
 	}
 
-	// RabbitMSG is structs mixture which is AMQP event message
-	RabbitMSG struct {
+	// QueueMSG is structs mixture which is full event message
+	QueueMSG struct {
 		EventData
 		BaseEvent
 	}
